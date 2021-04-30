@@ -1,0 +1,17 @@
+footer {
+    grid-area: footer;
+    background-color: $azul;
+    color: white;
+    font-weight: $light;
+    font-style: italic;
+    font-size: $p-size;
+    padding: 0.3rem;
+    text-align: center;
+
+}
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+

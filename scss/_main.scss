@@ -1,0 +1,220 @@
+body {
+    max-height: 100vh;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: $h1-size;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    color: black;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.158);
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: $h2-size;
+    color: $azul;
+    margin: 1rem 0;
+    text-shadow: 2px 1.5px 2px rgba(0, 0, 0, 0.158);
+}
+
+h3 {
+    font-size: $h3-size;
+}
+
+p {
+    font-size: $p-size;
+    span {
+        text-decoration: underline;
+        font-size: $p-size;
+        font-weight: $medium;
+    }
+    a {
+        font-size: $p-size;
+    }
+}
+
+header {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "aside main"
+                         "footer footer";
+    padding: 1rem;
+    background-color: $background-main;
+    margin: 0.5rem;
+    border-radius: 5px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.aside {
+    background-color: $background;
+}
+
+
+.aside {
+    grid-area: aside;
+    padding: 1rem;
+
+    .img_cv {
+        width: 80%;
+        border-radius: 5%;
+        text-align: center;
+        margin: auto;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.158);
+    }
+}
+
+.main {
+    grid-area: main;
+    padding: 1rem;
+}
+
+.secciones {
+    background-color: $azul;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: $light;
+}
+
+h2 i {
+    font-size: 120%;
+    margin-right: 5px;
+}
+.front {
+    background-color: $azul;
+    padding: 1px 0 10px 0;
+    border-radius: 5px;
+
+    h2 {
+        font-size: 25px;
+        font-weight: 500;
+        text-shadow:1px 1px 2px rgb(80, 80, 80);
+    }
+}
+
+.icons__tec {
+    display: flex;
+    justify-content: space-evenly;
+
+    div {
+        display: flex;
+        align-items: center;
+        padding: 5px 0 0 25px;
+        width: 33%;
+        justify-content: flex-start;
+
+        p {
+            margin-left: 5px;
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+            text-shadow:1px 1px 2px rgb(80, 80, 80);
+        }
+    }
+}
+
+.cursos,
+.terciaria,
+.secundaria {
+    margin-left: 3rem;
+    padding: 1rem 0;
+    text-transform: uppercase;    
+    text-shadow: 2px 1.5px 2px rgba(0, 0, 0, 0.158);
+}
+
+.items {
+    font-weight: $bold;
+    margin-bottom: 0.2rem;
+}
+
+.redes ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+        margin-left: 1rem;
+        font-size: $h2-size;
+    } 
+}
+
+.redes ul li a i{
+    font-size: 200%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 0.5rem;
+   }   
+
+.copy p a {
+    transition: all 0.5s;
+}
+
+.copy p a:hover {
+        color: black;
+}
+
+.redes ul li i:hover {
+    color: black;
+}
+
+p.cursos, p.secundaria, p.terciaria {
+    font-weight: $light;
+    text-decoration: none;
+    color: $azul;
+}
+p.cursos span, p.secundaria span, p.terciaria span {
+    text-decoration: none;
+}
+
+.experiencia_laboral h3 {
+    margin-bottom: 0.5rem;
+    margin-top: 1.8rem;
+}
+.conocimiento div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.conocimiento div img {
+    width: 15%;
+    margin: 0 5px 5px 5px;
+}
+
+.secciones .download {
+    color: white;
+    font-size: 90%;
+    transition: all .5s;
+}
+
+.secciones .download:hover {
+    color: rgb(166, 202, 243);
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 40% 60%;
+  }
+  .aside img {
+    width: 100%;
+  }    
+}
+
+@media (max-width: 400px) {
+    .grid {
+      grid-template-columns: 50% 50%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+  }
